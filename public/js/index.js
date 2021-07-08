@@ -18,7 +18,7 @@ window.onload = (e) => {
   mainFunction(1000);
 };
 
-var socket = io.connect("vchat-rabbit.herokuapp.com");
+var socket = io.connect("https://vchat-rabbit.herokuapp.com");
 socket.emit("userInformation", userStatus);
 
 
