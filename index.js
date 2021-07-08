@@ -20,8 +20,10 @@ app.get("/home" , (req , res)=>{
     res.render("index");
 });
 
-http.listen(3000, () => {
-  console.log("the app is run in port 3000!");
+const PORT = process.env.PORT || 3000;
+
+http.listen(PORT, () => {
+  console.log("the app is run in port " + PORT);
   io.on("connection", function (socket) {
 	  const socketId = socket.id;
 	  socketsStatus[socket.id] = {};
