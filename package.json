@@ -2,7 +2,7 @@
   "name": "vchat-rabbit",
   "version": "1.0.0",
   "description": "vchat-rabbit",
-  "main": "voice-chat.js",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
@@ -10,7 +10,7 @@
     "socket.io": "^4.1.2"
   },
   "scripts": {
-    "start": "node voice-chat.js"
+    "start": "node index.js"
   },
   "author": "Canh Nguyen",
   "license": "ISC"
